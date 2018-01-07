@@ -8,20 +8,32 @@
 
 /* Begin PBXBuildFile section */
 		2050420F20029367002B6EA2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2050420E20029367002B6EA2 /* AppDelegate.swift */; };
-		2050421120029367002B6EA2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2050421020029367002B6EA2 /* ViewController.swift */; };
-		2050421420029367002B6EA2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2050421220029367002B6EA2 /* Main.storyboard */; };
+		2050421120029367002B6EA2 /* PostVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2050421020029367002B6EA2 /* PostVC.swift */; };
+		2050421420029367002B6EA2 /* Post.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2050421220029367002B6EA2 /* Post.storyboard */; };
 		2050421620029367002B6EA2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2050421520029367002B6EA2 /* Assets.xcassets */; };
 		2050421920029367002B6EA2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2050421720029367002B6EA2 /* LaunchScreen.storyboard */; };
+		2050422A2002AC35002B6EA2 /* PostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 205042292002AC35002B6EA2 /* PostCell.swift */; };
+		2050422C2002B033002B6EA2 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2050422B2002B033002B6EA2 /* Post.swift */; };
+		2050422E2002BAA5002B6EA2 /* NetworkingService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2050422D2002BAA5002B6EA2 /* NetworkingService.swift */; };
+		205042302002BDEF002B6EA2 /* PostNetworking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2050422F2002BDEF002B6EA2 /* PostNetworking.swift */; };
+		205042332002BF66002B6EA2 /* GetPostsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 205042322002BF66002B6EA2 /* GetPostsResponse.swift */; };
+		205042352002C0C7002B6EA2 /* NetworkingError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 205042342002C0C7002B6EA2 /* NetworkingError.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		2050420B20029367002B6EA2 /* MVC-S Design Pattern.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MVC-S Design Pattern.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2050420E20029367002B6EA2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		2050421020029367002B6EA2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		2050421320029367002B6EA2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		2050421020029367002B6EA2 /* PostVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostVC.swift; sourceTree = "<group>"; };
+		2050421320029367002B6EA2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Post.storyboard; sourceTree = "<group>"; };
 		2050421520029367002B6EA2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2050421820029367002B6EA2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2050421A20029367002B6EA2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		205042292002AC35002B6EA2 /* PostCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostCell.swift; sourceTree = "<group>"; };
+		2050422B2002B033002B6EA2 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		2050422D2002BAA5002B6EA2 /* NetworkingService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingService.swift; sourceTree = "<group>"; };
+		2050422F2002BDEF002B6EA2 /* PostNetworking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostNetworking.swift; sourceTree = "<group>"; };
+		205042322002BF66002B6EA2 /* GetPostsResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetPostsResponse.swift; sourceTree = "<group>"; };
+		205042342002C0C7002B6EA2 /* NetworkingError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingError.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +66,116 @@
 		2050420D20029367002B6EA2 /* MVC-S Design Pattern */ = {
 			isa = PBXGroup;
 			children = (
-				2050420E20029367002B6EA2 /* AppDelegate.swift */,
-				2050421020029367002B6EA2 /* ViewController.swift */,
-				2050421220029367002B6EA2 /* Main.storyboard */,
-				2050421520029367002B6EA2 /* Assets.xcassets */,
-				2050421720029367002B6EA2 /* LaunchScreen.storyboard */,
+				205042372002D2C9002B6EA2 /* Usuario */,
 				2050421A20029367002B6EA2 /* Info.plist */,
+				205042202002944A002B6EA2 /* Global */,
+				205042212002946E002B6EA2 /* Post */,
 			);
 			path = "MVC-S Design Pattern";
+			sourceTree = "<group>";
+		};
+		205042202002944A002B6EA2 /* Global */ = {
+			isa = PBXGroup;
+			children = (
+				205042362002D1F3002B6EA2 /* Model */,
+				2050422820029617002B6EA2 /* Controller */,
+				20504227200295E3002B6EA2 /* View */,
+				20504226200294ED002B6EA2 /* Service */,
+			);
+			path = Global;
+			sourceTree = "<group>";
+		};
+		205042212002946E002B6EA2 /* Post */ = {
+			isa = PBXGroup;
+			children = (
+				20504225200294CB002B6EA2 /* View */,
+				20504224200294A7002B6EA2 /* Controller */,
+				2050422320029492002B6EA2 /* Service */,
+				2050422220029481002B6EA2 /* Model */,
+			);
+			path = Post;
+			sourceTree = "<group>";
+		};
+		2050422220029481002B6EA2 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				205042312002BF31002B6EA2 /* Responses */,
+				2050422B2002B033002B6EA2 /* Post.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		2050422320029492002B6EA2 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				2050422F2002BDEF002B6EA2 /* PostNetworking.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		20504224200294A7002B6EA2 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				2050421020029367002B6EA2 /* PostVC.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		20504225200294CB002B6EA2 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				2050421220029367002B6EA2 /* Post.storyboard */,
+				205042292002AC35002B6EA2 /* PostCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		20504226200294ED002B6EA2 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				2050422D2002BAA5002B6EA2 /* NetworkingService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		20504227200295E3002B6EA2 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				2050421720029367002B6EA2 /* LaunchScreen.storyboard */,
+				2050421520029367002B6EA2 /* Assets.xcassets */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		2050422820029617002B6EA2 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				2050420E20029367002B6EA2 /* AppDelegate.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		205042312002BF31002B6EA2 /* Responses */ = {
+			isa = PBXGroup;
+			children = (
+				205042322002BF66002B6EA2 /* GetPostsResponse.swift */,
+			);
+			path = Responses;
+			sourceTree = "<group>";
+		};
+		205042362002D1F3002B6EA2 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				205042342002C0C7002B6EA2 /* NetworkingError.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		205042372002D2C9002B6EA2 /* Usuario */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Usuario;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,7 +239,7 @@
 			files = (
 				2050421920029367002B6EA2 /* LaunchScreen.storyboard in Resources */,
 				2050421620029367002B6EA2 /* Assets.xcassets in Resources */,
-				2050421420029367002B6EA2 /* Main.storyboard in Resources */,
+				2050421420029367002B6EA2 /* Post.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -136,20 +250,26 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2050421120029367002B6EA2 /* ViewController.swift in Sources */,
+				2050422E2002BAA5002B6EA2 /* NetworkingService.swift in Sources */,
+				2050421120029367002B6EA2 /* PostVC.swift in Sources */,
+				205042352002C0C7002B6EA2 /* NetworkingError.swift in Sources */,
+				205042332002BF66002B6EA2 /* GetPostsResponse.swift in Sources */,
 				2050420F20029367002B6EA2 /* AppDelegate.swift in Sources */,
+				205042302002BDEF002B6EA2 /* PostNetworking.swift in Sources */,
+				2050422A2002AC35002B6EA2 /* PostCell.swift in Sources */,
+				2050422C2002B033002B6EA2 /* Post.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		2050421220029367002B6EA2 /* Main.storyboard */ = {
+		2050421220029367002B6EA2 /* Post.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				2050421320029367002B6EA2 /* Base */,
 			);
-			name = Main.storyboard;
+			name = Post.storyboard;
 			sourceTree = "<group>";
 		};
 		2050421720029367002B6EA2 /* LaunchScreen.storyboard */ = {
